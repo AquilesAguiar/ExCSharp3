@@ -12,49 +12,43 @@ class pessoa{
   //Atributos
   private string nome;
   private double idade,peso,altura;
+
   
-  //Set
+  //Sets
+
   public void set_nome(string name){
     nome = name;
   }
 
-  //Get
-  public string retorna_nome(){
-    return nome;
+  public void set_idade(double valor_idade){
+    idade = valor_idade;
   }
 
-  //Set
+  public void set_peso(double valor_peso){
+    peso = valor_peso;
+  }
+
+  public void set_altura(double valor_altura){
+    altura = valor_altura;
+  }
+
+  
+  //Metodos
+  
   public void Envelhercer (double quant_envelhecer){
-    
     idade += quant_envelhecer;
     
   }
-  
-  //Get
-  public double retorna_idade(){
-    return idade;
-  }
-
-  //Set
 
   public void engordar (double quant_engordar){
      peso += quant_engordar;
-     
-
+  
   }
 
-   //Set
   public void emagrecer (double quant_emagrecer){
     peso -= quant_emagrecer;
-   
   }
 
-  //Get
-  public double retorna_peso(){
-    return peso;
-  }
-
-  //Set
   public void crescer (double quant_crescer){
     if (idade>21)
       altura += quant_crescer;
@@ -62,7 +56,22 @@ class pessoa{
       altura+=0.5;    
   }
 
-  //Get
+  //-----------------------------------------------------
+
+  //get
+
+  public string retorna_nome(){
+    return nome;
+  }
+  
+  public double retorna_idade(){
+    return idade;
+  }
+
+  public double retorna_peso(){
+    return peso;
+  }
+
   public double retorna_altura(){
     return altura;
   }
