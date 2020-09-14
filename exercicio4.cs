@@ -14,6 +14,11 @@ class pessoa{
   private double idade,peso,altura;
   
   //Set
+  public void set_nome(string name){
+    nome = name;
+  }
+
+  //Get
   public string retorna_nome(){
     return nome;
   }
